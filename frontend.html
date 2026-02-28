@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roast Me 😈</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+            margin-top: 100px;
+            background-color: #111;
+            color: white;
+        }
+        input, button {
+            padding: 10px;
+            font-size: 18px;
+            margin: 10px;
+        }
+        #roast {
+            margin-top: 30px;
+            font-size: 22px;
+            color: #ff4d4d;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Enter Your Name... If You Dare 😏</h1>
+
+<input type="text" id="nameInput" placeholder="Your name">
+<button onclick="roast()">Roast Me</button>
+
+<div id="roast"></div>
+
+<script>
+function roast() {
+    let name = document.getElementById("nameInput").value;
+
+    if(name === "") {
+        alert("At least tell me your name so I can destroy it properly 😭");
+        return;
+    }
+
+    let roastMessage = name + ", even WiFi signals avoid connecting to your brain.";
+    document.getElementById("roast").innerText = roastMessage;
+}
+</script>
+
+</body>
+</html>
