@@ -39,7 +39,7 @@ function roast() {
         alert("At least tell me your name so I can destroy it properly 😭");
         return;
     }
-     let roasts = [
+     let roast = [
         `${name}, being roasted by me requires minimum standards, so please exit this page.`,
         `${name}, thank you for showing me i am not the most worthless person in this world.`,
         `${name}, your brain is crying to find intelligence, oops you dont have a brain!.`,
@@ -47,7 +47,7 @@ function roast() {
         `${name}, even your shadow leaves you in the dark, then why wonder about your ex.`
     ];
 
-    let randomIndex = Math.floor(Math.random()*roasts.length);
+    let randomIndex = Math.floor(Math.random()*roast.length);
     document.getElementById("roast").innerText = roastMessage;
 }
 </script>
